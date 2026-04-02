@@ -184,4 +184,4 @@ MIT License — free to use as inspiration. Please don't deploy this as-is with 
 
 ---
 
-*Built with ♥ using vanilla HTML, CSS, and JavaScript — because you don't always need a framework.*
+*Built with  vanilla HTML, CSS, and JavaScript — because you don't always need a framework.*
