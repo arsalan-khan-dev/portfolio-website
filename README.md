@@ -1,7 +1,7 @@
 # Arsalan Khan — Developer Portfolio
 
-[![Live Demo](https://arsalan-khan-dev.github.io/portfolio-website/)](https://arsalan-khan-dev.github.io/portfolio-website/)
-[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
+- **Live Demo:** [Visit Site](https://khan-portfolio.github.io)
+- **GitHub Repo:** [portfolio-website](https://github.com/arsalan-khan-dev/portfolio-website)
 
 A clean, modern, and fully responsive developer portfolio built with vanilla HTML, CSS, and JavaScript — no frameworks, no build tools, just fast and maintainable code.
 
