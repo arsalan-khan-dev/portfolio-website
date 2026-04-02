@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ── SEO Meta Tags ── -->
+  <title>Arsalan Khan — Full-Stack Developer & AI Enthusiast</title>
+  <meta name="description" content="Arsalan Khan is a Software Engineering student and full-stack web developer specializing in responsive websites, web apps, and AI-integrated solutions. Available for freelance projects.">
+  <meta name="keywords" content="Arsalan Khan, web developer, full-stack, JavaScript, PHP, Node.js, Pakistan, freelance developer, portfolio">
+  <meta name="author" content="Arsalan Khan">
+  <meta name="robots" content="index, follow">
+
+  <!-- ── Open Graph (LinkedIn / WhatsApp / Facebook previews) ── -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Arsalan Khan — Full-Stack Developer & AI Enthusiast">
+  <meta property="og:description" content="Building clean, performant web experiences. Available for freelance projects and full-time roles.">
+  <meta property="og:image" content="public/profile-ak.jpg">
+  <meta property="og:url" content="https://khan-portfolio.github.io">
+
+  <!-- ── Twitter Card ── -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Arsalan Khan — Full-Stack Developer">
+  <meta name="twitter:description" content="Building clean, performant web experiences. Available for projects.">
+  <meta name="twitter:image" content="public/profile-ak.jpg">
+
+  <!-- ── Favicon ── -->
+  <link rel="icon" type="image/x-icon" href="AK-favicon.ico">
+
+  <!-- ── Fonts ── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- ── Stylesheet ── -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════════ -->
+  <header id="navbar" role="banner">
+    <nav class="nav-container" aria-label="Main navigation">
+      <a href="#home" class="nav-logo">Arsalan<span>.</span></a>
+
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#packages">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div style="display:flex;align-items:center;gap:12px;">
+        <button id="themeToggle" aria-label="Switch to dark mode">
+          <!-- Moon icon -->
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <!-- Sun icon -->
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+
+        <button id="hamburger" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ═══════════════════════════════════════════
+         HERO
+    ═══════════════════════════════════════════ -->
+    <section class="hero" id="home" aria-label="Introduction">
+      <div class="hero-inner">
+        <img
+          src="public/profile-ak.jpg"
+          alt="Arsalan Khan, Full-Stack Developer"
+          class="hero-avatar"
+          width="80"
+          height="80"
+        >
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          Available for freelance &amp; full-time roles
+        </div>
+        <h1 class="hero-name display">
+          Arsalan<br><span class="accent">Khan.</span>
+        </h1>
+        <p class="hero-tagline" id="heroTagline" aria-live="polite">
+          Building web experiences that matter.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            View Projects
+          </a>
+          <a href="arsalan_resume.pdf" download class="btn btn-outline">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Resume
+          </a>
+          <a href="#contact" class="btn btn-accent">Hire Me</a>
+        </div>
+      </div>
+
+      <div class="scroll-indicator" aria-hidden="true">
+        <svg class="scroll-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+        Scroll
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         ABOUT
+    ═══════════════════════════════════════════ -->
+    <section id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-photo-wrap reveal">
+            <img
+              src="public/profile-ak.jpg"
+              alt="Arsalan Khan"
+              class="about-photo"
+              loading="lazy"
+              width="300"
+              height="400"
+            >
+            <div class="about-photo-deco" aria-hidden="true"></div>
+          </div>
+          <div class="about-body reveal">
+            <div class="section-header">
+              <span class="section-label">About Me</span>
+              <h2 id="about-heading" class="section-title">
+                Passionate about building<br><span>digital solutions</span>
+              </h2>
+            </div>
+            <p>
+              I'm <strong>Arsalan Khan</strong>, a Software Engineering student at Shifa Tameer-e-Millat University
+              with a deep passion for building clean, performant, and user-centered digital products.
+            </p>
+            <p style="margin-top:12px;">
+              My experience spans full-stack web development, database architecture, desktop applications,
+              and IoT projects. I enjoy exploring how technology can solve real-world problems — from
+              automating lab operations to building smart home systems.
+            </p>
+            <p style="margin-top:12px;">
+              I believe in writing clean, maintainable code and designing interfaces people actually enjoy using.
+            </p>
+            <div class="about-stats">
+              <div class="stat-item">
+                <span class="stat-number">6+</span>
+                <span class="stat-label">Projects Built</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">3+</span>
+                <span class="stat-label">Happy Clients</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">5+</span>
+                <span class="stat-label">Technologies</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SERVICES
+    ═══════════════════════════════════════════ -->
+    <section id="services" aria-labelledby="services-heading" style="background:var(--bg-2);">
+      <div class="container">
+        <div class="section-header reveal" style="text-align:center;max-width:560px;margin:0 auto clamp(40px,6vw,64px);">
+          <span class="section-label">What I Do</span>
+          <h2 id="services-heading" class="section-title">Services</h2>
+        </div>
+        <div class="services-grid">
+          <!-- Web Development -->
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3>Web Development</h3>
+            <p>Responsive, fast-loading websites and web apps using modern HTML, CSS, JavaScript, PHP, and Node.js.</p>
+          </article>
+          <!-- App Development -->
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+            </div>
+            <h3>App Development</h3>
+            <p>Cross-platform and native mobile applications with clean UI, API integration, and smooth user experiences.</p>
+          </article>
+          <!-- Database Design -->
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            </div>
+            <h3>Database Design</h3>
+            <p>Efficient, scalable database architecture using MySQL, MongoDB, and SQLite — optimized for performance and data integrity.</p>
+          </article>
+          <!-- AI & IoT -->
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4"/><line x1="8" y1="16" x2="8" y2="16"/><line x1="16" y1="16" x2="16" y2="16"/></svg>
+            </div>
+            <h3>AI Integration &amp; IoT</h3>
+            <p>Integrating AI APIs and building Arduino-based IoT systems to automate and enhance real-world functionality.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         PROJECTS
+    ═══════════════════════════════════════════ -->
+    <section id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Work</span>
+          <h2 id="projects-heading" class="section-title">Selected Projects</h2>
+        </div>
+        <div id="projectsGrid" role="list" aria-label="Projects">
+          <!-- Rendered by main.js from data/projects.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SKILLS
+    ═══════════════════════════════════════════ -->
+    <section id="skills" aria-labelledby="skills-heading" style="background:var(--bg-2);">
+      <div class="container">
+        <div class="skills-layout">
+          <div class="skills-intro reveal">
+            <span class="section-label">Expertise</span>
+            <h2 id="skills-heading" class="section-title">Skills &amp;<br><span>Technologies</span></h2>
+            <p style="color:var(--ink-2);margin-top:16px;max-width:380px;">
+              A practical skill set built through real projects — from frontend interfaces to backend systems, databases, and embedded hardware.
+            </p>
+          </div>
+          <div class="skills-right reveal">
+            <div class="skill-group">
+              <p class="skill-group-label">Frontend</p>
+              <div class="skill-tags">
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">JavaScript (ES6+)</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <p class="skill-group-label">Backend</p>
+              <div class="skill-tags">
+                <span class="skill-tag">PHP</span>
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">Java</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <p class="skill-group-label">Databases</p>
+              <div class="skill-tags">
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">MongoDB</span>
+                <span class="skill-tag">SQLite</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <p class="skill-group-label">Tools &amp; Hardware</p>
+              <div class="skill-tags">
+                <span class="skill-tag">Git &amp; GitHub</span>
+                <span class="skill-tag">Arduino</span>
+                <span class="skill-tag">VS Code</span>
+                <span class="skill-tag">Figma</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <p class="skill-group-label">Professional</p>
+              <div class="skill-tags">
+                <span class="skill-tag">Project Management</span>
+                <span class="skill-tag">Client Communication</span>
+                <span class="skill-tag">Agile Workflow</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         PACKAGES / PRICING
+    ═══════════════════════════════════════════ -->
+    <section id="packages" aria-labelledby="packages-heading">
+      <div class="container">
+        <div class="section-header reveal" style="text-align:center;max-width:560px;margin:0 auto clamp(40px,6vw,64px);">
+          <span class="section-label">Freelance</span>
+          <h2 id="packages-heading" class="section-title">Service Packages</h2>
+          <p style="color:var(--ink-2);margin-top:12px;">Transparent pricing for common project types. Custom quotes available on request.</p>
+        </div>
+        <div class="packages-grid">
+          <!-- Web: Basic -->
+          <article class="pkg-card reveal">
+            <span class="pkg-badge pkg-badge--web">Web</span>
+            <h3 class="pkg-name">Basic</h3>
+            <div class="pkg-price">Rs 20,000</div>
+            <ul class="pkg-features">
+              <li class="pkg-feature">
+                <svg class="pkg-check" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                5-page responsive website
+              </li>
+              <li class="pkg-feature">
+                <svg class="pkg-check" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                Mobile-first design
+              </li>
+              <li class="pkg-feature">
+                <svg class="pkg-check" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                Basic SEO setup
+              </li>
+              <li class="pkg-feature">
+                <svg class="pkg-check" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                Contact form
+              </li>
+              <li class="pkg-feature">
+                <svg class="pkg-check" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                1 month support
+              </li>
+            </ul>
+            <a href="#contact" class="btn btn-outline" style="width:100%;justify-content:center;">Get Started</a>
+          </article>
+
+          <!-- Web: Advanced (Featured) -->
+          <article class="pkg-card pkg-card--featured reveal">
+            <span class="pkg-popular">Most Popular</span>
+            <span class="pkg-badge pkg-badge--web">Web</span>
+            <h3 class="pkg-name">Advanced</h3>
+            <div class="pkg-price">Rs 45,000</div>
+            <ul class="pkg-features">
+              <li class="pkg-feature"><svg class="pkg-check" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>10-page website</li>
+              <li class="pkg-feature"><svg class="pkg-check" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Database integration</li>
+              <li class="pkg-feature"><svg class="pkg-check" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Admin dashboard</li>
+              <li class="pkg-feature"><svg class="pkg-check" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Advanced SEO</li>
+              <li class="pkg-feature"><svg class="pkg-check" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>3 months support</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary" style="width:100%;justify-content:center;">Get Started</a>
+          </article>
+
+          <!-- Web: Premium -->
+          <article class="pkg-card reveal">
+            <span class="pkg-badge pkg-badge--web">Web</span>
+            <h3 class="pkg-name">Premium</h3>
+            <div class="pkg-price">Rs 85,000</div>
+            <ul class="pkg-features">
+              <li class="pkg-feature"><svg class="pkg-check" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Unlimited pages</li>
+              <li class="pkg-feature"><svg class="pkg-check" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>E-commerce features</li>
+              <li class="pkg-feature"><svg class="pkg-check" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Premium SEO + analytics</li>
+              <li class="pkg-feature"><svg class="pkg-check" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Custom features</li>
+              <li class="pkg-feature"><svg class="pkg-check" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>6 months support</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline" style="width:100%;justify-content:center;">Get Started</a>
+          </article>
+
+          <!-- App: Basic -->
+          <article class="pkg-card reveal">
+            <span class="pkg-badge pkg-badge--app">App</span>
+            <h3 class="pkg-name">Basic</h3>
+            <div class="pkg-price">Rs 40,000</div>
+            <ul class="pkg-features">
+              <li class="pkg-feature"><svg class="pkg-check" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Single-platform app</li>
+              <li class="pkg-feature"><svg class="pkg-check" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>5 screens</li>
+              <li class="pkg-feature"><svg class="pkg-check" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Push notifications</li>
+              <li class="pkg-feature"><svg class="pkg-check" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>1 month support</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline" style="width:100%;justify-content:center;">Get Started</a>
+          </article>
+
+          <!-- App: Advanced (Featured) -->
+          <article class="pkg-card pkg-card--featured reveal">
+            <span class="pkg-popular">Most Popular</span>
+            <span class="pkg-badge pkg-badge--app">App</span>
+            <h3 class="pkg-name">Advanced</h3>
+            <div class="pkg-price">Rs 70,000</div>
+            <ul class="pkg-features">
+              <li class="pkg-feature"><svg class="pkg-check" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Cross-platform app</li>
+              <li class="pkg-feature"><svg class="pkg-check" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>10+ screens</li>
+              <li class="pkg-feature"><svg class="pkg-check" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>API integration</li>
+              <li class="pkg-feature"><svg class="pkg-check" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Database backend</li>
+              <li class="pkg-feature"><svg class="pkg-check" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>3 months support</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary" style="width:100%;justify-content:center;">Get Started</a>
+          </article>
+
+          <!-- App: Premium -->
+          <article class="pkg-card reveal">
+            <span class="pkg-badge pkg-badge--app">App</span>
+            <h3 class="pkg-name">Premium</h3>
+            <div class="pkg-price">Rs 1,20,000</div>
+            <ul class="pkg-features">
+              <li class="pkg-feature"><svg class="pkg-check" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Native iOS &amp; Android</li>
+              <li class="pkg-feature"><svg class="pkg-check" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Unlimited screens</li>
+              <li class="pkg-feature"><svg class="pkg-check" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Real-time sync</li>
+              <li class="pkg-feature"><svg class="pkg-check" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Payment integration</li>
+              <li class="pkg-feature"><svg class="pkg-check" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>6 months support</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline" style="width:100%;justify-content:center;">Get Started</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         CERTIFICATES
+    ═══════════════════════════════════════════ -->
+    <section id="certificates" aria-labelledby="certs-heading" style="background:var(--bg-2);">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Credentials</span>
+          <h2 id="certs-heading" class="section-title">Certificates</h2>
+        </div>
+        <div class="certs-grid">
+          <article class="cert-card reveal">
+            <a href="images/cert1.jpg" target="_blank" rel="noopener noreferrer" aria-label="View Frontend Web Development Certificate from W3Schools">
+              <div class="cert-img-wrap">
+                <img src="images/cert1.jpg" alt="Frontend Web Development Certificate — W3Schools" loading="lazy" width="400" height="300">
+              </div>
+            </a>
+            <div class="cert-body">
+              <h3 class="cert-title">Frontend Web Development</h3>
+              <div class="cert-meta">
+                <span class="cert-issuer">W3Schools</span>
+                <span>2025</span>
+              </div>
+            </div>
+          </article>
+          <article class="cert-card reveal">
+            <a href="images/cert2.jpg" target="_blank" rel="noopener noreferrer" aria-label="View Java Development Certificate">
+              <div class="cert-img-wrap">
+                <img src="images/cert2.jpg" alt="Java Development Certificate" loading="lazy" width="400" height="300">
+              </div>
+            </a>
+            <div class="cert-body">
+              <h3 class="cert-title">Java Development</h3>
+              <div class="cert-meta">
+                <span class="cert-issuer">W3Schools</span>
+                <span>2025</span>
+              </div>
+            </div>
+          </article>
+          <article class="cert-card reveal">
+            <a href="images/cert3.jpg" target="_blank" rel="noopener noreferrer" aria-label="View WordPress Development Certificate">
+              <div class="cert-img-wrap">
+                <img src="images/cert3.jpg" alt="WordPress Development Certificate — Learning With Earning" loading="lazy" width="400" height="300">
+              </div>
+            </a>
+            <div class="cert-body">
+              <h3 class="cert-title">WordPress Development</h3>
+              <div class="cert-meta">
+                <span class="cert-issuer">Learning With Earning</span>
+                <span>2025</span>
+              </div>
+            </div>
+          </article>
+          <article class="cert-card reveal">
+            <a href="images/cert4.jpg" target="_blank" rel="noopener noreferrer" aria-label="View Effective Business Development Certificate">
+              <div class="cert-img-wrap">
+                <img src="images/cert4.jpg" alt="Effective Business Development Certificate — HP" loading="lazy" width="400" height="300">
+              </div>
+            </a>
+            <div class="cert-body">
+              <h3 class="cert-title">Effective Business Development</h3>
+              <div class="cert-meta">
+                <span class="cert-issuer">HP</span>
+                <span>2025</span>
+              </div>
+            </div>
+          </article>
+          <article class="cert-card reveal">
+            <a href="images/cert5.jpg" target="_blank" rel="noopener noreferrer" aria-label="View Fiverr Freelancing Certificate">
+              <div class="cert-img-wrap">
+                <img src="images/cert5.jpg" alt="Fiverr Freelancing Certificate — Learning With Earning" loading="lazy" width="400" height="300">
+              </div>
+            </a>
+            <div class="cert-body">
+              <h3 class="cert-title">Fiverr Freelancing</h3>
+              <div class="cert-meta">
+                <span class="cert-issuer">Learning With Earning</span>
+                <span>2025</span>
+              </div>
+            </div>
+          </article>
+          <article class="cert-card reveal">
+            <a href="images/cert6.jpg" target="_blank" rel="noopener noreferrer" aria-label="View Graphic Designing Certificate">
+              <div class="cert-img-wrap">
+                <img src="images/cert6.jpg" alt="Graphic Designing Certificate — Learning With Earning" loading="lazy" width="400" height="300">
+              </div>
+            </a>
+            <div class="cert-body">
+              <h3 class="cert-title">Graphic Designing</h3>
+              <div class="cert-meta">
+                <span class="cert-issuer">Learning With Earning</span>
+                <span>2025</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         REVIEWS
+    ═══════════════════════════════════════════ -->
+    <section id="reviews" aria-labelledby="reviews-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Testimonials</span>
+          <h2 id="reviews-heading" class="section-title">Client Reviews</h2>
+        </div>
+        <div class="reviews-grid">
+          <article class="review-card reveal">
+            <div class="review-quote-icon" aria-hidden="true">"</div>
+            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="review-text">
+              He not only delivered on time but also added features I didn't even think of. His attention to detail and ability to explain technical aspects in plain language made the entire process smooth.
+            </p>
+            <div class="review-author-row">
+              <div class="review-avatar" aria-hidden="true">AH</div>
+              <div>
+                <p class="review-name">Ahmed Hassan</p>
+                <p class="review-location">Business Owner, Karachi</p>
+              </div>
+            </div>
+          </article>
+          <article class="review-card reveal">
+            <div class="review-quote-icon" aria-hidden="true">"</div>
+            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="review-text">
+              Working with Arsalan on our Car Rental Management software was a fantastic experience. He understood our vision and delivered exactly what we needed. The system runs flawlessly.
+            </p>
+            <div class="review-author-row">
+              <div class="review-avatar" aria-hidden="true">FA</div>
+              <div>
+                <p class="review-name">Fatima Ali</p>
+                <p class="review-location">Tech Entrepreneur, Lahore</p>
+              </div>
+            </div>
+          </article>
+          <article class="review-card reveal">
+            <div class="review-quote-icon" aria-hidden="true">"</div>
+            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="review-text">
+              Arsalan developed a web application for our school that exceeded our expectations. The UI is clean, the app runs smoothly, and the post-launch support was excellent. A true professional.
+            </p>
+            <div class="review-author-row">
+              <div class="review-avatar" aria-hidden="true">BK</div>
+              <div>
+                <p class="review-name">Bilal Khan</p>
+                <p class="review-location">Principal &amp; Founder, Kohat</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         GALLERY
+    ═══════════════════════════════════════════ -->
+    <section id="gallery" aria-labelledby="gallery-heading" style="background:var(--bg-2);">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Visual Work</span>
+          <h2 id="gallery-heading" class="section-title">Gallery</h2>
+        </div>
+        <div class="gallery-grid">
+          <figure class="gallery-item reveal">
+            <img src="images/gallery1.jpg" alt="Dashboard UI design" loading="lazy" width="400" height="300">
+            <div class="gallery-item-label">Dashboard UI</div>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="images/gallery2.jpg" alt="Software development screenshot" loading="lazy" width="400" height="300">
+            <div class="gallery-item-label">Software Development</div>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="images/gallery3.jpg" alt="Flight booking system web interface" loading="lazy" width="400" height="300">
+            <div class="gallery-item-label">Flight Booking System</div>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="images/gallery4.jpg" alt="Login page UI design" loading="lazy" width="400" height="300">
+            <div class="gallery-item-label">Login Page UI</div>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="images/gallery5.jpg" alt="Responsive design showcase" loading="lazy" width="400" height="300">
+            <div class="gallery-item-label">Responsive Design</div>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="images/gallery6.jpg" alt="E-commerce UI design" loading="lazy" width="400" height="300">
+            <div class="gallery-item-label">E-Commerce UI</div>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         RESUME
+    ═══════════════════════════════════════════ -->
+    <section id="resume" aria-labelledby="resume-heading">
+      <div class="container">
+        <div class="resume-section reveal">
+          <span class="section-label">Career</span>
+          <h2 id="resume-heading" class="section-title">Resume</h2>
+          <p>
+            Download my full resume to learn more about my education, experience, and qualifications.
+          </p>
+          <a href="arsalan_resume.pdf" download class="btn btn-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Resume (PDF)
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         CONTACT
+    ═══════════════════════════════════════════ -->
+    <section id="contact" aria-labelledby="contact-heading" style="background:var(--bg-2);">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <span class="section-label">Let's Talk</span>
+            <h2 id="contact-heading" class="section-title">Get In<br><span>Touch</span></h2>
+            <p>Have a project in mind or want to explore working together? I'd love to hear from you.</p>
+            <div class="contact-detail">
+              <div class="contact-detail-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <span class="contact-detail-text">khancreations99@gmail.com</span>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.56 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <span class="contact-detail-text">+92 332 5387740</span>
+            </div>
+          </div>
+
+          <form class="contact-form reveal" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-field">
+                <label class="form-label" for="contact-name">Your Name</label>
+                <input id="contact-name" class="form-input" type="text" name="name" placeholder="John Doe" required autocomplete="name">
+              </div>
+              <div class="form-field">
+                <label class="form-label" for="contact-email">Email Address</label>
+                <input id="contact-email" class="form-input" type="email" name="email" placeholder="john@example.com" required autocomplete="email">
+              </div>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="contact-subject">Subject</label>
+              <input id="contact-subject" class="form-input" type="text" name="subject" placeholder="Project inquiry, collaboration...">
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="contact-message">Message</label>
+              <textarea id="contact-message" class="form-textarea" name="message" placeholder="Tell me about your project or idea..." required></textarea>
+            </div>
+            <p id="formStatus" class="form-status" hidden></p>
+            <button type="submit" class="btn btn-primary" style="align-self:flex-start;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer role="contentinfo">
+    <div class="footer-inner">
+      <a href="#home" class="footer-logo">Arsalan<span>.</span></a>
+      <p class="footer-copy">&copy; 2025 Arsalan Khan. All rights reserved.</p>
+      <div class="footer-social" aria-label="Social media links">
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/muhammad-arsalan-428336378/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>
+        </a>
+        <!-- GitHub -->
+        <a href="https://github.com/lazyvirushere" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/bug_slayer_99/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/arsalan.zeeshan.372" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════
+       CHATBOT — Rubi
+  ═══════════════════════════════════════════ -->
+  <div class="chatbot-wrap" role="complementary" aria-label="Chat assistant">
+    <button id="chatbotIcon" aria-label="Open chat assistant" aria-expanded="false" aria-controls="chatbotWindow">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    </button>
+    <div id="chatbotWindow" role="dialog" aria-label="Rubi — Portfolio Assistant" aria-modal="false">
+      <div class="chatbot-header">
+        <div class="chatbot-header-info">
+          <div class="chatbot-avatar-small" aria-hidden="true">R</div>
+          <div>
+            <h3>Rubi</h3>
+            <p class="chatbot-status">Arsalan's assistant · Online</p>
+          </div>
+        </div>
+        <button id="chatbotClose" aria-label="Close chat">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div id="chatbotBody" role="log" aria-live="polite" aria-relevant="additions"></div>
+      <div class="chatbot-input-row">
+        <input
+          id="chatbotInput"
+          type="text"
+          placeholder="Ask me anything…"
+          aria-label="Type your message"
+          autocomplete="off"
+        >
+        <button id="chatbotSend" aria-label="Send message">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Scripts (ES modules) ── -->
+  <script type="module" src="main.js"></script>
+  <script type="module" src="chatbot.js"></script>
+
+</body>
+</html>
