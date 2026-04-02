@@ -1,6 +1,6 @@
 # Arsalan Khan — Developer Portfolio
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Site-blue?style=for-the-badge)](https://khan-portfolio.github.io)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Site-blue?style=for-the-badge)](https://arsalan-khan-dev/portfolio-website)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
 A clean, modern, and fully responsive developer portfolio built with vanilla HTML, CSS, and JavaScript — no frameworks, no build tools, just fast and maintainable code.
@@ -19,7 +19,7 @@ A clean, modern, and fully responsive developer portfolio built with vanilla HTM
 - **Dark / Light mode** — system preference detection with manual toggle, persisted to localStorage
 - **Smooth scroll navigation** — fixed navbar with active link highlighting on scroll
 - **Project showcase** — cards with live demo links, GitHub links, and tech stack badges
-- **Rubi chatbot** — smart rule-based assistant with weighted keyword matching and suggested prompts
+- **Rubi chatbot** — Smart chatbot with contextual response system
 - **Working contact form** — powered by Formspree (no backend required)
 - **Fully responsive** — mobile-first layout, tested from 320px to 1440px+
 - **Accessible** — semantic HTML5, ARIA labels, keyboard navigation, screen reader support
@@ -177,9 +177,9 @@ MIT License — free to use as inspiration. Please don't deploy this as-is with 
 ## Contact
 
 **Arsalan Khan**
-- Email: khancreations99@gmail.com
-- LinkedIn: [linkedin.com/in/muhammad-arsalan-428336378](https://www.linkedin.com/in/muhammad-arsalan-428336378/)
-- GitHub: [github.com/lazyvirushere](https://github.com/lazyvirushere)
+- Email: Arsalankhang004.com
+- LinkedIn: [linkedin.com/in/muhammad-arsalan-428336378](https://www.linkedin.com/in/-arsalan-khan/)
+- GitHub: [github.com/lazyvirushere](https://github.com/arsalan-khan-dev)
 - Instagram: [@bug_slayer_99](https://www.instagram.com/bug_slayer_99/)
 
 ---
