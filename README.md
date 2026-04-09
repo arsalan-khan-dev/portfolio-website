@@ -180,7 +180,7 @@ MIT License — free to use as inspiration. Please don't deploy this as-is with 
 **Arsalan Khan**
 - Email: Arsalankhang004.com
 - LinkedIn: [linkedin.com/in/muhammad-arsalan-428336378](https://www.linkedin.com/in/-arsalan-khan/)
-- GitHub: [github.com/lazyvirushere](https://github.com/arsalan-khan-dev)
+- GitHub: [github.com/Arsalan Khan](https://github.com/arsalan-khan-dev)
 - Instagram: [@bug_slayer_99](https://www.instagram.com/bug_slayer_99/)
 
 ---
